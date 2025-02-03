@@ -1,11 +1,30 @@
-<ActionBar title="My App"> </ActionBar>
 
+<!--
 <GridLayout>
   <ListView [items]="itemService.items()">
     <ng-template let-item="item">
       <StackLayout [nsRouterLink]="['/item', item.id]">
-        <Label [text]="item.name" class="text-lg text-gray-500 p-4"></Label>
+        <Label [text]="item.name" class="text-2xl text-red-500 p-4"></Label>
+        
+ 
+  
       </StackLayout>
     </ng-template>
   </ListView>
 </GridLayout>
+
+  <Image src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flabellina-300x200.jpg" stretch="aspectFill" class="card-image"></Image>
+
+
+
+-->
+
+<StackLayout class="container">
+  <GridLayout rows="auto" columns="*" class="card">
+      <Image src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flabellina-300x200.jpg" stretch="aspectFill" class="card-image"></Image>
+      <StackLayout row="1" class="card-content">
+          <Label text="Awesome Card" class="card-title"></Label>
+          <Label text="This is a simple card created in NativeScript with Angular. The height of the card will adjust automatically based on the content inside." class="card-description"></Label>
+      </StackLayout>
+  </GridLayout>
+</StackLayout>
